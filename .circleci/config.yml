@@ -1,8 +1,6 @@
 version: 2
 jobs:
   build:
-    #...
-  deploy:
     machine:
       enabled: true
     steps:
@@ -16,9 +14,3 @@ workflows:
   build-and-deploy:
     jobs:
       - build
-      - deploy:
-          requires:
-            - build
-          filters:
-            branches:
-              only: master
