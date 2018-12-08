@@ -1,10 +1,5 @@
 version: 2
 jobs:
-  build:
-    branches:
-        only:
-          - master
-    steps:
   deploy:
     machine:
       enabled: true
